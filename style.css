@@ -1,4 +1,3 @@
-/* CSS Variables for consistent theming */
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e67e22;
@@ -14,7 +13,6 @@
     --card-alt: #ecf0f1;
 }
 
-/* Global Styles - Sans-serif font for body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-light);
@@ -25,7 +23,6 @@ body {
     min-height: 100vh;
 }
 
-/* Typography - Serif/Bold fonts for headings */
 h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -52,7 +49,6 @@ h3 {
 }
 
 
-/* Navigation */
 nav {
     background-color: var(--primary-color);
     padding: 15px 0;
@@ -71,7 +67,6 @@ nav ul {
     gap: 10px;
 }
 
-/* Remove default text-decoration from navigation links */
 nav ul li a {
     color: var(--white);
     text-decoration: none;
@@ -80,14 +75,13 @@ nav ul li a {
     border-radius: 4px;
     font-size: 1.1em;
     
-    /*  Add smooth transitions */
+
     transition: all 0.3s ease-in-out;
     
-    /* For positioning the pseudo-element */
+    
     position: relative;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
     background-color: var(--accent-color);
     transform: translateY(-2px);
@@ -95,21 +89,18 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Active state for navigation links */
 nav ul li a:active {
     background-color: var(--active-press);
     transform: translateY(1px);
     transition: all 0.1s ease;
 }
 
-/*Focus state for navigation links */
 nav ul li a:focus {
     outline: 3px solid var(--focus-outline);
     outline-offset: 2px;
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
 }
 
-/* Button styling */
 button {
     background-color: var(--accent-color);
     color: var(--white);
@@ -144,7 +135,6 @@ button:focus {
     box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
 }
 
-/*Focus states for input fields */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -170,7 +160,6 @@ input[type="number"]:focus {
 }
 
 
-/* Product cards with inline-block */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +180,6 @@ input[type="number"]:focus {
     vertical-align: top;
 }
 
-/* Alternating background colors for product cards */
 .product-grid article:nth-child(odd) {
     background-color: var(--white);
     border-color: var(--accent-color);
@@ -216,7 +204,6 @@ input[type="number"]:focus {
 }
 
 
-/*Empty cart styling (cart.html) */
 .cart-container:empty {
     display: block;
     padding: 40px;
@@ -243,7 +230,6 @@ input[type="number"]:focus {
     margin-top: 10px;
 }
 
-/*Currency symbol using ::before */
 .price::before {
     content: "$";
     font-weight: bold;
@@ -257,7 +243,6 @@ input[type="number"]:focus {
     color: var(--primary-color);
 }
 
-/* Required and valid field styling (signup.html) */
 input:required {
     border-left: 5px solid var(--accent-color);
     background-color: #fff9f0;
@@ -280,7 +265,6 @@ input:valid:focus {
     box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.3);
 }
 
-/* Table styling and quotation marks (detail.html) */
 .specs-table {
     width: 100%;
     border-collapse: collapse;
@@ -298,7 +282,6 @@ input:valid:focus {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* First column bold/different color */
 .specs-table tr td:first-child {
     font-weight: bold;
     color: var(--accent-color);
@@ -311,7 +294,6 @@ input:valid:focus {
     font-weight: bold;
 }
 
-/* Stylized quotation marks for reviews */
 .review {
     background-color: var(--white);
     padding: 25px;
@@ -331,7 +313,6 @@ input:valid:focus {
     line-height: 1.8;
 }
 
-/* Opening quotation mark */
 .review blockquote::before {
     content: '"';
     font-size: 4em;
@@ -343,7 +324,6 @@ input:valid:focus {
     font-family: Georgia, serif;
 }
 
-/* Closing quotation mark */
 .review blockquote::after {
     content: '"';
     font-size: 4em;
@@ -355,7 +335,6 @@ input:valid:focus {
     font-family: Georgia, serif;
 }
 
-/*marker styling for order history (account.html) */
 .order-history details {
     margin-bottom: 15px;
 }
@@ -371,7 +350,6 @@ input:valid:focus {
     transition: all 0.3s ease;
 }
 
-/* Styling the marker (arrow) */
 .order-history summary::marker {
     color: var(--accent-color);
     font-size: 1.2em;
@@ -382,7 +360,6 @@ input:valid:focus {
 }
 
 
-/* General link styling */
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -409,7 +386,6 @@ a:focus {
     border-radius: 3px;
 }
 
-/* Footer styling */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -446,7 +422,6 @@ footer a:focus {
     outline-offset: 2px;
 }
 
-/* Shopping Cart specific styling */
 .cart-item {
     background-color: var(--white);
     padding: 25px;
@@ -477,7 +452,6 @@ footer a:focus {
     transform: scale(1.05);
 }
 
-/* Form sections */
 .form-section {
     background-color: var(--white);
     padding: 30px;
@@ -509,7 +483,6 @@ legend {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Description List styling */
 dl {
     background-color: var(--white);
     padding: 25px;
@@ -534,7 +507,6 @@ dd {
     border-radius: 5px;
 }
 
-/* Aside styling */
 aside {
     background-color: var(--white);
     padding: 25px;
@@ -544,7 +516,6 @@ aside {
     border-top: 4px solid var(--accent-color);
 }
 
-/* Radio and checkbox styling */
 input[type="radio"], 
 input[type="checkbox"] {
     margin-right: 8px;
@@ -559,7 +530,6 @@ input[type="checkbox"]:focus {
     outline-offset: 2px;
 }
 
-/* Horizontal rule */
 hr {
     border: none;
     height: 3px;
