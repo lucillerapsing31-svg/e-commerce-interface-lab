@@ -1,2 +1,2 @@
-# e-commerce-interface-lab
-submitted by; Gepollo, Malou C. and Rapsing, Lucille A.
+# E-Commerce-Interface-lab
+Submitted by; Gepollo, Malou C. and Rapsing, Lucille A.
