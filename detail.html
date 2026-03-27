@@ -12,67 +12,59 @@
             <ul>
                 <li><a href="landing.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.html">Cart</a> <span id="cart-count"></span></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
     
     <article>
-        <img src="https://placehold.co/500x400" alt="Ceramic Travel Mug">
-        <h1>Ceramic Travel Mug</h1>
-        <p>$24.99</p>
+        <img src="https://placehold.co/500x400" alt="Product Image">
+        <h1>Product Name</h1>
+        <p class="price">$0.00</p>
         
-        <form>
+        <div>
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
-            <a href="cart.html"><button type="button">Add to Cart</button></a>
-        </form>
+            <button type="button" class="add-to-cart-btn" data-id="">Add to Cart</button>
+        </div>
         
         <h2>Technical Specifications</h2>
-<table class="specs-table">
-    <thead>
-        <tr>
-            <th>Specification</th>
-            <th>Details</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Capacity</td>
-            <td>350ml</td>
-        </tr>
-        <tr>
-            <td>Material</td>
-            <td>Ceramic + Silicone lid</td>
-        </tr>
-        <tr>
-            <td>Dishwasher Safe</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td>Insulated</td>
-            <td>Keeps hot for 2 hours</td>
-        </tr>
-    </tbody>
-</table>
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Material</td>
+                    <td>Premium Quality</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>1 Year</td>
+                </tr>
+            </tbody>
+        </table>
     </article>
 
     <section>
         <h2>User Reviews</h2>
         
-        <article>
+        <article class="review">
             <blockquote>
-                "Keeps my coffee hot during my whole commute."
+                "Great product! Highly recommended."
             </blockquote>
-            <p>— Sam T.</p>
+            <p>— Happy Customer</p>
         </article>
         
-        <article>
+        <article class="review">
             <blockquote>
-                "Nice design, no leaks. Love the matte finish."
+                "Excellent quality and fast shipping."
             </blockquote>
-            <p>— Priya K.</p>
+            <p>— Satisfied Buyer</p>
         </article>
     </section>
     
@@ -80,5 +72,7 @@
     <footer>
         <p><a href="products.html">← Back to products</a> | <a href="cart.html">View cart</a> | <a href="account.html">Account</a></p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
-</html>          
+</html>
