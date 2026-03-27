@@ -11,17 +11,18 @@
         <nav>
             <ul>
                 <li><a href="landing.html">Home</a></li>
-                <li><a href="products.html">Clothing</a></li>
-                <li><a href="products.html">Electronics</a></li>
-                <li><a href="products.html">Books</a></li>
-                <li><a href="products.html">Sale</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html?category=clothing">Clothing</a></li>
+                <li><a href="products.html?category=electronics">Electronics</a></li>
+                <li><a href="products.html?category=books">Books</a></li>
+                <li><a href="products.html?category=sale">Sale</a></li>
+                <li><a href="cart.html">Cart</a> <span id="cart-count"></span></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="hero-section">
         <h1>Summer Essentials</h1>
         <p>Fresh styles, zero worries. Up to 40% off.</p>
         <a href="products.html"><button>Shop Now</button></a>
@@ -29,40 +30,19 @@
 
     <section>
         <h2>Featured Products</h2>
-        <article>
-            <h3>Bluetooth Speaker</h3>
-            <p>$45.00</p>
-            <a href="detail.html">View details</a>
-        </article>
-        <article>
-            <h3>Fitness Tracker</h3>
-            <p>$89.00</p>
-            <a href="detail.html">View details</a>
-        </article>
-        <article>
-            <h3>Tablet Stand</h3>
-            <p>$29.00</p>
-            <a href="detail.html">View details</a>
-        </article>
+        <div class="product-grid" id="featured-products"></div>
     </section>
 
     <section>
         <h2>Discounted Products</h2>
-        <article>
-            <h3>Hooded Sweatshirt</h3>
-            <p>Was $59.99, now $41.99</p>
-            <a href="detail.html">View details</a>
-        </article>
-        <article>
-            <h3>Wireless Mouse</h3>
-            <p>Was $34.99, now $24.99</p>
-            <a href="detail.html">View details</a>
-        </article>
+        <div class="product-grid" id="discounted-products"></div>
     </section>
     
     <hr>
     <footer>
         <p><a href="account.html">My Account</a> | <a href="cart.html">Shopping Cart</a> | <a href="signup.html">Sign Up</a></p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
