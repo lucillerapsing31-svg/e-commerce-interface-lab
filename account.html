@@ -8,53 +8,38 @@
 </head>
 <body>
     <header>
-        <h1>Welcome back, Lucille Rapsing</h1>
+        <h1>Welcome back!</h1>
         <nav>
             <ul>
                 <li><a href="landing.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">Profile Settings</a></li>
-                <li><a href="#">Wishlist</a></li>
+                <li><a href="cart.html">Cart</a> <span id="cart-count"></span></li>
                 <li><a href="signup.html">Switch Account</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="order-history">
             <h2>Recent Purchases</h2>
-            <dl>
-                <dt><strong>March 12, 2025</strong></dt>
-                <dd>Slim Leather Wallet - $39.99</dd>
-                <dd>Ceramic Travel Mug - $24.99</dd>
-                
-                <dt><strong>February 2, 2025</strong></dt>
-                <dd>LED Desk Lamp - $59.99</dd>
-                <dd>Bluetooth Speaker - $45.00</dd>
-            </dl>
-        </section>
-
-        <section>
-            <h2>Past Orders</h2>
+            <details>
+                <summary><strong>March 2025</strong></summary>
+            </details>
+            
+            <details>
+                <summary><strong>February 2025</strong></summary>
+            </details>
             
             <details>
                 <summary><strong>January 2025</strong></summary>
-                <p>Fitness Tracker - $89.00</p>
-                <p>Tablet Stand - $29.00</p>
             </details>
             
             <details>
                 <summary><strong>December 2024</strong></summary>
-                <p>Hooded Sweatshirt - $41.99</p>
-                <p>Wireless Mouse - $24.99</p>
             </details>
             
             <details>
                 <summary><strong>November 2024</strong></summary>
-                <p>Wireless Earbuds - $59.99</p>
-                <p>Phone Case - $19.99</p>
             </details>
         </section>
         
@@ -66,5 +51,7 @@
     <footer>
         <p><a href="landing.html">Home</a> | <a href="products.html">Shop</a> | <a href="signup.html">Sign Out</a></p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
